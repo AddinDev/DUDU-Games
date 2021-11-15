@@ -19,7 +19,7 @@ body {
 }
 
 .vertical-center {
-    overflow: auto;
+    overflow: hidden;
     margin: 0;
     position: absolute;
     top: 50%;
