@@ -1,0 +1,23 @@
+
+
+
+
+/* Focus on Hover */
+.hoverFocus:hover {
+	cursor: pointer;
+	transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	-o-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	transition: 0.5s;
+}
+
+.hoverFocus {
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	transition: 0.5s;
+}
