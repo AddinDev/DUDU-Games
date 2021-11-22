@@ -1,6 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+}
 
+body {
+	background-color: #eeebdd;
+	color: black;
+	font-size: 25px;
+}
+
+.dark-mode {
+	background-color: black;
+	color: white;
+}
+
+header {
+	display: inline
+}
+
+.jumbotron {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+    justify-content: center;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.jumbotron>h2 {
+	font-weight: normal;
+	padding: 0.7em;
+}
+
+span.bold {
+	font-weight: bold;
+}
+
+.jumbotron a {
+	color: black;
+	text-decoration: none;
+	padding: 10px 25px;
+	border: 2px solid black;
+	/* width: 100%; */
+}
+
+.jumbotron a:hover {
+	color: white;
+	background: black;
+	font-weight: medium;
+}
+
+main {
+	padding: 20px;
+	/* overflow: auto; */
+}
+
+section {
+	height: 100vh;
+}
+
+.grid {
+	padding: 8px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 10px;
+}
+
+.grid-item {
+	font-size: 1em;
+	padding: 2em;
+	color: black;
+	background: white;
+	text-align: center;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	background-size: cover;
+	border-radius: 5px;
+}
+
+nav a {
+	padding: 5px 10px;
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: white;
+	background: black;
+}
+
+nav li {
+	float: right;
+	display: inline;
+	list-style-type: none;
+	padding: 15px;
+}
+
+footer {
+	padding: 20px;
+	color: black;
+	background-color: #eeebdd;
+	text-align: center;
+	font-weight: bold
+}
 
 /* Focus on Hover */
 .hoverFocus:hover {

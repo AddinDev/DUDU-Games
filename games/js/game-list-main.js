@@ -9,10 +9,11 @@ const main = function () {
             image
         } = game;
         const gameElement = document.createElement("div");
-        gameElement.innerHTML = `<div class="grid-item hoverFocus" style="background-image: url(${image})">
+        gameElement.innerHTML = `<a href="detail/" style="text-decoration: none;"><div class="grid-item hoverFocus" style="background-image: url(${image})">
               <p>${title}</p>
               <p>${desc}</p>
-              </div>`;
+              </div>
+              </a>`;
         gameListElement.appendChild(gameElement);
     });
 };
