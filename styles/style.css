@@ -13,6 +13,31 @@ body {
     /* background-color: cyan; */
 }
 
+.animating-background {
+    background: linear-gradient(270deg, #5ec11b, #1a9ed0);
+    background-size: 400% 400%;
+
+    -webkit-animation: GradientAnimation 30s ease infinite;
+    -o-animation: GradientAnimation 30s ease infinite;
+    animation: GradientAnimation 30s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-o-keyframes GradientAnimation {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@keyframes GradientAnimation {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+
 .container {
     height: 100vh;
     position: relative;
@@ -22,9 +47,10 @@ body {
     overflow: hidden;
     margin: 0;
     position: absolute;
-    top: 50%;
+    margin-top: 30px;
+    /* top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 .main {
@@ -76,6 +102,10 @@ body {
         width: 85%;
     }
 } */
+
+h1 {
+    font-size: 5em;
+}
 
 .img-container {
     position: relative;
