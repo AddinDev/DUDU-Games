@@ -1,11 +1,11 @@
 const games = [
     {
-        title: "Game 1",
+        title: "Plant Cells",
         desc: "Tentang",
         image: "https://picsum.photos/1000/1000/?random=1"
     },
     {
-        title: "Game 1",
+        title: "Math Maze",
         desc: "Tentang",
         image: "https://picsum.photos/1000/1000/?random=11"
     },

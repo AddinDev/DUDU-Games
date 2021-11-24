@@ -10,7 +10,7 @@ const main = function () {
         } = game;
         const gameElement = document.createElement("div");
         gameElement.innerHTML = `<a href="detail/" style="text-decoration: none;"><div class="grid-item hoverFocus" style="background-image: url(${image})">
-              <p>${title}</p>
+              <h4>${title}</h4>
               <p>${desc}</p>
               </div>
               </a>`;
