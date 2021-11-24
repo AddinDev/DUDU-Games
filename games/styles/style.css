@@ -112,6 +112,15 @@ section {
 	border-radius: 5px;
 }
 
+@media only screen and (max-width: 620px) {
+
+    /* For mobile phones: */
+    .grid-item {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 nav a {
 	padding: 5px 10px;
 	color: black;
