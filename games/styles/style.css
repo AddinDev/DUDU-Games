@@ -96,8 +96,9 @@ section {
 .grid {
 	padding: 8px;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 	grid-gap: 10px;
+	
 }
 
 .grid-item {
@@ -107,6 +108,7 @@ section {
 	background: white;
 	text-align: center;
 	background-repeat: no-repeat;
+	background-position: center;
 	/* background-attachment: fixed; */
 	background-size: cover;
 	border-radius: 5px;
@@ -158,9 +160,25 @@ footer {
 	-o-transform: scale(1.03);
 	-ms-transform: scale(1.03);
 	transition: 0.5s;
+
 }
 
-.hoverFocus {
+.textItems{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.gamesection{
+	background-color: white;
+	margin: 42px;
+	border-radius: 25px;
+	padding: 25px;
+}
+
+
+
+
+.hoverFocus{
 	transform: scale(1.0);
 	-webkit-transform: scale(1.0);
 	-moz-transform: scale(1.0);
