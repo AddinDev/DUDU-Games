@@ -13,7 +13,7 @@ const main = function () {
         gameElement.innerHTML = 
         `
         <a href="${gamepage}" style="text-decoration: none;">
-            <div class="grid-item hoverFocus" style="background-image: url(${image})">
+            <div class="grid-item hoverFocus" style="background-image: url(${image});">
                 <div class="textItems">
                     <h4 class="textItems" style="background-color:white;">${title}</h4>
                 </div>

@@ -114,6 +114,10 @@ section {
 	border-radius: 5px;
 }
 
+.grid-item:hover {
+	box-shadow: 5px 5px;
+}
+
 nav a {
 	padding: 5px 10px;
 	color: black;
