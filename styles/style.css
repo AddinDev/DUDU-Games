@@ -122,8 +122,10 @@ h1 {
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: red;
     border-radius: 10px;
+
+        text-shadow: 2px 2px 4px gray;
+      
   }
   
   /* When you mouse over the container, fade in the overlay icon*/
