@@ -86,12 +86,7 @@ body {
 }
 
 .right {
-    /* background-image: url('https://picsum.photos/500');
-    background-size: cover;
-    background-repeat: no-repeat; */
-
     float: right;
-
 }
 
 @media only screen and (max-width: 620px) {
