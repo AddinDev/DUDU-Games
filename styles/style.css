@@ -137,15 +137,16 @@ h1 {
 }
 
 .card {
-    width: 100%;
+    width: 400px;
+    height: 400px;
     position: relative;
     max-height: 50vh;
     border-radius: 10px;
 }
 
-.card:hover {
+/* .card:hover {
 	box-shadow: 7px 7px black;
-}
+} */
 
 .hoverFocus {
     transform: scale (1.0);
