@@ -60,17 +60,17 @@ body {
 }
 
 .play-btn {
-    color: black;
+    color: white;
+    background-color: black;
     font-size: 2em;
     font-weight: bold;
     padding: 10px 25px;
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 .play-btn:hover {
-    color: white;
-    background-color: black;
-    border-radius: 7px;
+	box-shadow: 5px 5px black;
 }
 
 
