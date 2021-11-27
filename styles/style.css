@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap');
 
 * {
@@ -11,38 +10,20 @@ body {
     padding: 0;
 
     background-color: rgb(0, 88, 88);
-    /* height: 100vh; */
-    /* background-color: cyan; */
 }
 
-.animating-background {
-    background: linear-gradient(270deg, #5ec11b, #1a9ed0);
-    background-size: 400% 400%;
-
-    -webkit-animation: GradientAnimation 30s ease infinite;
-    -o-animation: GradientAnimation 30s ease infinite;
-    animation: GradientAnimation 30s ease infinite;
+.pic {
+    width: 100%;
+    position: relative;
+    max-height: 50vh;
+    border-radius: 10px;
 }
 
-@-webkit-keyframes GradientAnimation {
-    0%{background-position:0% 48%}
-    50%{background-position:100% 53%}
-    100%{background-position:0% 48%}
-}
-@-o-keyframes GradientAnimation {
-    0%{background-position:0% 48%}
-    50%{background-position:100% 53%}
-    100%{background-position:0% 48%}
-}
-@keyframes GradientAnimation {
-    0%{background-position:0% 48%}
-    50%{background-position:100% 53%}
-    100%{background-position:0% 48%}
+.pic:hover {
+    box-shadow: 7px 7px black;
 }
 
 .container {
-    /* height: 100vh;
-    position: relative; */
     width: 70%;
     height: 100vh;
     margin: 0 auto;
@@ -53,57 +34,46 @@ body {
 
 .vertical-center {
     overflow: hidden;
-    /* position: absolute; */
     background-color: white;
-	border-radius: 25px;
-	padding: 25px;
-    /* top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); */
+    border-radius: 25px;
+    padding: 25px;
 }
 
 .main {
     color: black;
     float: left;
-    width: 40%;
+    width: 75%;
     padding: 0 20px;
 }
 
-.main > p {
-    margin:  25px 0;
+.main>p {
+    margin: 25px 0;
 }
 
 .right {
-    /* background-image: url('https://picsum.photos/500');
-    background-size: cover;
-    background-repeat: no-repeat; */
-
     float: right;
-
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
 
-.pic {
-    width: 100%;
-    max-height: 50vh;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px gray;
+.play-btn {
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
-/* .right > img {
-    width: 50%;
-    height: auto;
-} */
-
-@media only screen and (max-width: 620px) {
-
-    /* For mobile phones: */
-    body,
-    .main,
-    .right {
-        width: 100%;
-    }
-
+.play-btn:hover {
+	box-shadow: 5px 5px black;
 }
+
+
 
 /* 
 @media only screen and (max-width: 800px) {
@@ -116,37 +86,6 @@ h1 {
     margin: 0;
     font-size: 5em;
 }
-
-.hoverFocus {
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-    -moz-transform: scale(1.0);
-    -o-transform: scale(1.0);
-    -ms-transform: scale(1.0);
-    transition: 0.5s;
-}
-
-.hoverFocus:hover {
-    cursor: pointer;
-    transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transition: 0.5s;
-}
-
-.card {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    max-height: 50vh;
-    border-radius: 10px;
-}
-
-/* .card:hover {
-	box-shadow: 7px 7px black;
-} */
 
 .hoverFocus {
     transform: scale (1.0);
@@ -165,4 +104,75 @@ h1 {
     -o-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transition: 0.5s;
+}
+
+@media only screen and (max-width: 620px) {
+
+    body,
+    .main,
+    .right {
+        width: 100%;
+    }
+
+    .container {
+        width: 85%;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .vertical-center {
+        margin: 0;
+        padding: 15px;
+    }
+
+}
+
+.animating-background {
+    background: linear-gradient(270deg, #5ec11b, #1a9ed0);
+    background-size: 400% 400%;
+    -webkit-animation: GradientAnimation 30s ease infinite;
+    -o-animation: GradientAnimation 30s ease infinite;
+    animation: GradientAnimation 30s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+    0% {
+        background-position: 0% 48%
+    }
+
+    50% {
+        background-position: 100% 53%
+    }
+
+    100% {
+        background-position: 0% 48%
+    }
+}
+
+@-o-keyframes GradientAnimation {
+    0% {
+        background-position: 0% 48%
+    }
+
+    50% {
+        background-position: 100% 53%
+    }
+
+    100% {
+        background-position: 0% 48%
+    }
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 48%
+    }
+
+    50% {
+        background-position: 100% 53%
+    }
+
+    100% {
+        background-position: 0% 48%
+    }
 }
